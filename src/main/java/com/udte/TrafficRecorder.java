@@ -64,7 +64,7 @@ public class TrafficRecorder {
             if (size ==0 || res.equals(""))
               return;// 判断输入的byte是否为空
             try {
-              File path = new File("cached/" + host.replace(".", "/") + "/" + uri);
+              File path = new File("cached/" + host.replace(".", "/").replace(":", "/") + "/" + uri);
               File fileParent = path.getParentFile();
               fileParent.mkdirs();
               
