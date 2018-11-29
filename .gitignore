@@ -21,3 +21,9 @@ hs_err_pid*
 *.iml
 
 target/
+
+.settings/
+.vscode/
+cached/
+.classpath
+.project
